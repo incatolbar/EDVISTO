@@ -1,0 +1,191 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(../img/BackroundIngreso.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed; 
+}
+
+.text {
+    text-align:center;
+    font-size: 28px;
+    color:white;
+    margin-left: 360px;
+    width:290px;
+}
+
+header{
+    display:flex;
+    min-height: 40px;
+    background-color:transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.logo img{
+    height:35px;
+    margin-left: 480px;
+    margin-top: 20px;
+}
+
+@media (max-width:700px){
+    header{flex-direction:column;
+    }
+}
+
+.form-body {
+    display:flow-root;
+    width: 600px;
+    min-width: 40px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left: 70px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.form-body input {
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 55%;
+    padding-left: 10px;
+    color:rgb(11, 49, 43);
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-body input[type="text"]{
+    margin-top: 40px;
+    margin-left: 340px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-left: 350px;
+  }
+
+.form-body select {
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 55%;
+    padding-left: 10px;
+    color:rgba(97, 99, 98, 0.952);
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+    margin-top: 20px;
+    margin-left: 340px;
+}
+
+
+::placeholder {
+    font-size: 1rem;
+    color: rgba(97, 99, 98, 0.952);
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 170px;
+    float: left;
+}
+
+.form-body input:hover {
+    transition: 0.5s;
+    border: 1px solid rgb(133, 87, 126);
+    color: rgb(43, 64, 68);
+}
+
+.form-body button {
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    margin-left: 385px;
+    margin-bottom: 25px;
+    height: 40px;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background: rgb(74, 171, 209);
+    color:rgba(255, 255, 255, 0.938);
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1.5px solid rgb(1, 55, 65);
+    transition: all 0.5s ease;
+}
+
+.form-body button:hover {
+    color:rgb(255, 255, 255);
+    border:rgb(16, 50, 54);
+    background: linear-gradient(#6d586d, #38595f);
+}
+
+#email.error-input {
+    border: 1px solid red;
+  }
+
+#rol.error-input {
+    border: 1px solid red;
+  }
+
+  @media (max-width: 700px) {
+    .form-body {
+        width: 90%;
+        margin-top: 2px;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .form-body input {
+        width: 100%;
+    }
+
+    .form-body button {
+        margin-left: 330px;
+        margin-right: 0;
+        width:23%;
+    }
+
+    .form-body textarea[name="descripción"]{
+        width: 100%;
+        margin-left: 0;
+      }
+}
