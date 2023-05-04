@@ -15,6 +15,7 @@
         </a>
         <p class="text">BIENVENIDO DOCENTE</p>
     </header>
+
     <div class="form-body">
         <form name= evaluacion onsubmit="return validateForm()">
             LISTADO DE VIDEOS
@@ -27,34 +28,56 @@
 
             <h1>EVALUACIÓN</h1>
 
+    <div class="creatividad-container">    
             Creatividad
-            <select name="Creatividad" id="Creatividad">
+            <select name="creatividad" id="creatividad">
                 <option value></option>
             </select>
-            <input type="text" name="Creatividad">
+            <input type="text" placeholder="Haz un comentario" name="creatividad">
+    </div>
 
+    <div class="recursos-container">
             1. Elige los recursos que necesita para llevar al cabo las 
             actividades que decide realizar.
-            <select name="Recursos" id="recursos">
+            <select name="recursos" id="recursos">
                 <option value></option>
             </select>
+            <input type="text" placeholder="Haz un comentario" name="recursos">
+    </div>
+
+    <div class="decisiones-container">
             2. Persiste en la realización de actividades desafiantes y 
             toma decisiones para concluirlas.
             <select name="decisiones" id="decisiones">
                 <option value></option>
             </select>
+            <input type="text" placeholder="Haz un comentario" name="recursos">
+    </div>
+
+    <div class="ayuda-container">
             3. Reconoce cuando alguien necesita ayuda y la proporciona.
             <select name="ayuda" id="ayuda">
                 <option value></option>
             </select>
+            <input type="text" placeholder="Haz un comentario" name="recursos">
+    </div>
+
+    <div class="seguridad-container">
             4. Se expresa con seguridad y defiende sus ideas ante sus compañeros.
             <select name="seguridad" id="seguridad">
                 <option value></option>
             </select>
+            <input type="text" placeholder="Haz un comentario" name="recursos">
+    </div>
+
+    <div class="convivencia-container">
             5.Propone acuerdos para la convivencia, el juego o el trabajo, explica su utilidad y actúa con apego a ellos.
-            <select name="decisiones" id="decisiones">
+            <select name="convivencia" id="convivencia">
                 <option value></option>
             </select>
+            <input type="text" placeholder="Haz un comentario" name="recursos">
+    </div>
+
             <button type="submit">Guardar</button>
         </form>
     </div>
