@@ -5,8 +5,6 @@
 }
 
 body{
-    position: relative;
-    padding-top: 2.5rem;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -32,7 +30,6 @@ header{
     justify-content:flex-start;
     align-items: center;
     padding: 10px;
-    z-index: 999;
 }
 
 .logo{
@@ -57,6 +54,7 @@ header{
     margin-bottom: 20px;
     padding:1.5rem;
     padding-left: 60px;
+    overflow-y: auto;
 }
 
 .text {
@@ -118,23 +116,43 @@ header{
     margin-bottom: 1rem;
 }
 
+.rating {
+    width: 7rem;
+    margin: 0 auto;
+    height: 2rem;
+  }
+ 
+.rating input[id="radio5"] {
+    margin-right: 15rem;
+}
+
+
+.rating label {
+    font-size: 20px;
+    color: gray;
+  }
+  
+.rating input[type="radio"] {
+    display: none;
+  }
+   
+.rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+.rating  label:hover,
+.rating  label:hover ~ label {
+    color: orange;
+  }
+  
+.rating input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
 .creatividad-container {
     display: flex;
     color: rgb(97, 96, 96);
-}
-
-.creatividad-container select {
-    margin-left: 33rem;
-    height: 1.8rem;
-    width: 5%;
-    padding-left: 10px;
-    color:rgb(97, 97, 97);
-    border: 1px solid rgb(97, 96, 96);
-    border-radius: 2px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: white;
-    font-size: 1rem;
-    outline: none;
 }
 
 .creatividad-container input {
