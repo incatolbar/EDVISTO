@@ -150,6 +150,14 @@ header{
     color: orange;
   }
 
+
+.rating input[type="radio"]:hover ~ label::before,
+.rating input[type="radio"]:hover::before,
+.rating input[type="radio"]:checked ~ label::before,
+.rating input[type="radio"]:checked::before {
+    color: orange;
+ }
+
 .creatividad-container {
     display: flex;
     color: rgb(97, 96, 96);
