@@ -1,8 +1,10 @@
+window.onload = function() {
 const form = document.forms.formulario;
 form.addEventListener("submit", function(event) {
   event.preventDefault();
   validateForm();
 });
+}
 
 function validateForm() {
     var nomForm = document.forms["formulario"]["email"].value;
