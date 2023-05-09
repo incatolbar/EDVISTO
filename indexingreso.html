@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso - Edvisto</title>
+    <link rel="stylesheet" href="./style/ingreso.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="./img/logo edvisto blanco.png" alt="Logo">
+        </a>
+    </header>
+    <div class="form-body">
+        <p class="text">INGRESA TUS DATOS</p>
+        <form name= formulario onsubmit= "return validateForm()" id="miFormulario">
+            <input type="text" placeholder="E-mail" name="email" id="email">
+            <span id="emailError" class="error"></span>
+            <select name="rol" id="rol">
+                <option value></option>
+                <option value="1">Docente</option> 
+                <option value="2">Estudiante</option>
+            </select>
+            <span id="rolError" class="error"></span>
+            <button type="submit" id="Ingresar">Ingresar</button>
+        </form>
+    </div>
+
+    <script src="./js/ingreso.js"></script>
+</body>
+</html>

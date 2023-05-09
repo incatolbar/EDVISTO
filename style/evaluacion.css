@@ -1,0 +1,249 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(../img/General\ backround.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed; 
+}
+
+.text {
+    text-align: center;
+    color: 1px rgb(163, 163, 163);
+    margin-left: 500px;
+    font-size: 1rem;
+}
+
+header{
+    display:flex;
+    min-height: 2.5rem;
+    background-color:white;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.logo img{
+    height:30px;
+}
+
+.form-body {
+    display:flow-root;
+    width: 78.4rem;
+    height: 30.7rem;
+    min-width: 40px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.959);
+    margin-left: 3rem;
+    margin-top: 3.8rem;
+    margin-right: 3rem;
+    margin-bottom: 20px;
+    padding:1.5rem;
+    padding-left: 60px;
+    overflow-y: auto;
+}
+
+.form-body select[name="Titulo"]{
+    height: 30px;
+    width: 45%;
+    margin-left: 1.5rem;
+    padding-left:30px;
+    color:rgb(11, 49, 43);
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-body select[name="Datos del estudiante"]{
+    height: 30px;
+    width: 30%;
+    margin-left: 1.5rem;
+    padding-left:30px;
+    color:rgb(11, 49, 43);
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-body input[id=descripcion] {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 11.7rem;
+    margin-bottom: 2rem;
+    height: 5rem;
+    width: 45%;
+    padding-left: 10px;
+    color:rgb(11, 49, 43);
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-body h1{
+    text-align: left;
+    font-size: 1rem;
+    color: rgb(97, 97, 97);
+    margin-bottom: 1rem;
+}
+
+.rating {
+    margin-left: 35rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+.rating label {
+    font-size: 20px;
+    color: gray;
+  }
+  
+.rating input[type="radio"] {
+    display: none;
+  }
+   
+.rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+.rating  label:hover,
+.rating  label:hover ~ label {
+    color: orange;
+  }
+  
+.rating input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+.form-body input[id=comentario] {
+    margin-top: 0rem;
+    margin-left: 0rem;
+    height: 1.8rem;
+    width: 30%;
+    padding-left: 10px;
+    color:rgb(97, 97, 97);
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.creatividad-container {
+    display: flex;
+    color: rgb(97, 96, 96);
+}
+
+.rating1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+.rating1 label {
+    font-size: 20px;
+    color: gray;
+  }
+  
+.rating1 input[type="radio"] {
+    display: none;
+  }
+   
+.rating1 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+.rating1  label:hover,
+.rating1  label:hover ~ label {
+    color: orange;
+  }
+  
+.rating1 input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+
+.recursos-container {
+    display: flex;
+    color: rgb(97, 96, 96);
+}
+
+.decisiones-container {
+    display: flex;
+    color: rgb(97, 96, 96);
+}
+
+.ayuda-container {
+    display: flex;
+    color: rgb(97, 96, 96);
+}
+
+.seguridad-container {
+    display: flex;
+    color: rgb(97, 96, 96);
+}
+
+.convivencia-container {
+    display: flex;
+    color: rgb(97, 96, 96);
+}
+
+.form-body input:hover {
+    transition: 0.5s;
+    border: 1px solid rgb(133, 87, 126);
+    color: rgb(43, 64, 68);
+}
+
+.form-body button {
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    margin-left: 372px;
+    margin-bottom: 25px;
+    height: 40px;
+    width: 23%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background: rgb(77, 164, 167);
+    color:rgba(255, 255, 255, 0.938);
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1.5px solid rgb(1, 55, 65);
+    transition: all 0.5s ease;
+}
+
+.form-body button:hover {
+    color:rgb(255, 255, 255);
+    border:rgb(16, 50, 54);
+    background: linear-gradient(#6d586d, #38595f);
+}
