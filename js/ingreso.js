@@ -5,7 +5,7 @@ form.addEventListener("submit", function(event) {
 });
 
 function validateForm() {
-     var nomForm = document.forms["formulario"]["email"].value;
+    var nomForm = document.forms["formulario"]["email"].value;
     var emailError = document.getElementById("emailError");
     var emailInput = document.getElementById("email");
     var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;

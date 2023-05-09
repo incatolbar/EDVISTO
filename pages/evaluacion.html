@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación - Edvisto</title>
+    <link rel="stylesheet" href="../style/evaluacion.css">
+</head>
+<body>
+    <script src="../js/evaluacion.js"></script>
+    <header>
+        <a href="#" class="logo">
+            <img src="../img/logo edvisto azul.jpg" alt="Logo">
+        </a>
+        <p class="text">BIENVENIDO DOCENTE</p>
+    </header>
+
+    <div class="form-body">
+        <form name= evaluacion onsubmit="return validateForm()">
+            LISTADO DE VIDEOS
+            <select name="Titulo" id="titulo">
+                <option value></option>
+            </select>
+            <select name="Datos del estudiante" id="DatosEstudiante">
+            </select>
+            <input type="text" id="descripcion" name="descripcion" placeholder="Descripción" readonly>
+
+            <h1>EVALUACIÓN</h1>
+
+    <div class="creatividad-container">    
+            Creatividad
+            <div class="rating">
+            <input id="radio1" type="radio" class="estrellas" name="estrellas" value="5">
+            <label for="radio1">★</label>
+            <input id="radio2" type="radio" class="estrellas" name="estrellas" value="4">
+            <label for="radio2">★</label>
+            <input id="radio3" type="radio" class="estrellas" name="estrellas" value="3">
+            <label for="radio3">★</label>
+            <input id="radio4" type="radio" class="estrellas" name="estrellas" value="2">
+            <label for="radio4">★</label>
+            <input id="radio5" type="radio" class="estrellas" name="estrellas" value="1">
+            <label for="radio5">★</label>
+        </div>
+        <input type="text" placeholder="Haz un comentario" name="creatividad">
+    </div>
+
+    <div class="recursos-container">
+            1. Elige los recursos que necesita para llevar al cabo las 
+            actividades que decide realizar.
+            <select name="recursos" id="recursos">
+                <option value></option>
+            </select>
+            <input type="text" placeholder="Haz un comentario" name="recursos">
+    </div>
+
+    <div class="decisiones-container">
+            2. Persiste en la realización de actividades desafiantes y 
+            toma decisiones para concluirlas.
+            <select name="decisiones" id="decisiones">
+                <option value></option>
+            </select>
+            <input type="text" placeholder="Haz un comentario" name="recursos">
+    </div>
+
+    <div class="ayuda-container">
+            3. Reconoce cuando alguien necesita ayuda y la proporciona.
+            <select name="ayuda" id="ayuda">
+                <option value></option>
+            </select>
+            <input type="text" placeholder="Haz un comentario" name="recursos">
+    </div>
+
+    <div class="seguridad-container">
+            4. Se expresa con seguridad y defiende sus ideas ante sus compañeros.
+            <select name="seguridad" id="seguridad">
+                <option value></option>
+            </select>
+            <input type="text" placeholder="Haz un comentario" name="recursos">
+    </div>
+
+    <div class="convivencia-container">
+            5.Propone acuerdos para la convivencia, el juego o el trabajo, explica su utilidad y actúa con apego a ellos.
+            <select name="convivencia" id="convivencia">
+                <option value></option>
+            </select>
+            <input type="text" placeholder="Haz un comentario" name="recursos">
+    </div>
+
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+</body>
+</html>
