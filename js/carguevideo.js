@@ -1,4 +1,4 @@
-var Guardar = document.querySelector('button type=submit');
+var Guardar = document.querySelector('button[type=submit]');
 Guardar.addEventListener('click', function() {
     alert('El video ha sido guardado.');
 });

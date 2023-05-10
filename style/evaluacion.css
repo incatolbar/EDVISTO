@@ -9,7 +9,7 @@ body{
     align-items: center;
     justify-content: center;
     font-family:Arial, Helvetica, sans-serif;
-    background-image: url(../img/General\ backround.png);
+    background-image: url(../img/Background\ solo.jpg);
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -41,20 +41,33 @@ header{
     height:30px;
 }
 
+.marco{
+    display:flow-root;
+    width: 113.5rem;
+    height: 54.2rem;
+    min-width: 2.5rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.116);
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding:1.5rem;
+}
+
 .form-body {
     display:flow-root;
-    width: 78.4rem;
-    height: 30.7rem;
-    min-width: 40px;
+    width: 85rem;
+    height: 40rem;
+    min-width: 2.5rem;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.959);
-    margin-left: 3rem;
-    margin-top: 3.8rem;
+    margin-left: 12rem;
+    margin-top: 6rem;
     margin-right: 3rem;
-    margin-bottom: 20px;
-    padding:1.5rem;
-    padding-left: 60px;
-    overflow-y: auto;
+    margin-bottom: 1.25rem;
+    padding:3rem;
+    padding-left: 3.75rem;
 }
 
 .form-body select[name="Titulo"]{
@@ -109,6 +122,11 @@ header{
     margin-bottom: 1rem;
 }
 
+.creatividad-container {
+    display: flex;
+    color: rgb(97, 96, 96);
+}
+
 .rating {
     margin-left: 35rem;
     margin-right: 1rem;
@@ -138,22 +156,7 @@ header{
     color: orange;
   }
 
-.form-body input[id=comentario] {
-    margin-top: 0rem;
-    margin-left: 0rem;
-    height: 1.8rem;
-    width: 30%;
-    padding-left: 10px;
-    color:rgb(97, 97, 97);
-    border: 1px solid rgb(70, 69, 69);
-    border-radius: 2px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: white;
-    font-size: 0.8rem;
-    text-align: left;
-}
-
-.creatividad-container {
+.recursos-container {
     display: flex;
     color: rgb(97, 96, 96);
 }
@@ -187,30 +190,155 @@ header{
     color: orange;
   }
 
-
-.recursos-container {
-    display: flex;
-    color: rgb(97, 96, 96);
-}
-
 .decisiones-container {
     display: flex;
     color: rgb(97, 96, 96);
 }
+
+.rating2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+.rating2 label {
+    font-size: 20px;
+    color: gray;
+  }
+  
+.rating2 input[type="radio"] {
+    display: none;
+  }
+   
+.rating2 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+.rating2  label:hover,
+.rating2  label:hover ~ label {
+    color: orange;
+  }
+  
+.rating2 input[type="radio"]:checked ~ label {
+    color: orange;
+  }
 
 .ayuda-container {
     display: flex;
     color: rgb(97, 96, 96);
 }
 
+.rating3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+.rating3 label {
+    font-size: 20px;
+    color: gray;
+  }
+  
+.rating3 input[type="radio"] {
+    display: none;
+  }
+   
+.rating3 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+.rating3  label:hover,
+.rating3  label:hover ~ label {
+    color: orange;
+  }
+  
+.rating3 input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
 .seguridad-container {
     display: flex;
     color: rgb(97, 96, 96);
 }
 
+.rating4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+.rating4 label {
+    font-size: 20px;
+    color: gray;
+  }
+  
+.rating4 input[type="radio"] {
+    display: none;
+  }
+   
+.rating4 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+.rating4  label:hover,
+.rating4  label:hover ~ label {
+    color: orange;
+  }
+  
+.rating4 input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
 .convivencia-container {
     display: flex;
     color: rgb(97, 96, 96);
+}
+
+.rating5 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+.rating5 label {
+    font-size: 20px;
+    color: gray;
+  }
+  
+.rating5 input[type="radio"] {
+    display: none;
+  }
+   
+.rating5 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+.rating5  label:hover,
+.rating5  label:hover ~ label {
+    color: orange;
+  }
+  
+.rating5 input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+  .form-body input[id=comentario] {
+    margin-top: 0rem;
+    margin-left: 0rem;
+    height: 1.8rem;
+    width: 30%;
+    padding-left: 10px;
+    color:rgb(97, 97, 97);
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 0.8rem;
+    text-align: left;
 }
 
 .form-body input:hover {
@@ -223,7 +351,7 @@ header{
     display: block;
     margin: auto;
     margin-top: 12px;
-    margin-left: 372px;
+    margin-left: 30rem;
     margin-bottom: 25px;
     height: 40px;
     width: 23%;
