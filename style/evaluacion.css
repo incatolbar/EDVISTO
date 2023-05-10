@@ -18,9 +18,9 @@ body{
 
 .text {
     text-align: center;
-    color: 1px rgb(163, 163, 163);
-    margin-left: 500px;
-    font-size: 1rem;
+    color: 1px solid rgb(97, 97, 7);
+    margin-left: 37%;
+    font-size:large;
 }
 
 header{
@@ -29,7 +29,7 @@ header{
     background-color:white;
     justify-content:flex-start;
     align-items: center;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .logo{
@@ -38,13 +38,13 @@ header{
 }
 
 .logo img{
-    height:30px;
+    height:1.875rem;
 }
 
 .marco{
     display:flow-root;
-    width: 113.5rem;
-    height: 54.2rem;
+    width: 97%;
+    height: 90%;
     min-width: 2.5rem;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.116);
@@ -57,24 +57,26 @@ header{
 
 .form-body {
     display:flow-root;
-    width: 85rem;
-    height: 40rem;
+    width: 68%;
+    height: 82%;
     min-width: 2.5rem;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.959);
-    margin-left: 12rem;
-    margin-top: 6rem;
-    margin-right: 3rem;
+    margin-left: 16%;
+    margin-top: 2%;
+    margin-right: 5%;
     margin-bottom: 1.25rem;
-    padding:3rem;
-    padding-left: 3.75rem;
+    padding:4%;
+    padding-left: 4%;
+    color: rgb(97, 96, 96);
+    font-weight: bold;
 }
 
 .form-body select[name="Titulo"]{
-    height: 30px;
+    height: 1.875rem;
     width: 45%;
     margin-left: 1.5rem;
-    padding-left:30px;
+    padding-left:1.875rem;
     color:rgb(11, 49, 43);
     border: 1px solid rgb(70, 69, 69);
     border-radius: 2px;
@@ -85,10 +87,10 @@ header{
 }
 
 .form-body select[name="Datos del estudiante"]{
-    height: 30px;
-    width: 30%;
+    height: 1.875rem;
+    width: 31%;
     margin-left: 1.5rem;
-    padding-left:30px;
+    padding-left:1.875rem;
     color:rgb(11, 49, 43);
     border: 1px solid rgb(70, 69, 69);
     border-radius: 2px;
@@ -99,13 +101,13 @@ header{
 }
 
 .form-body input[id=descripcion] {
-    display: block;
+    display: inline-block;
     margin-top: 1rem;
     margin-left: 11.7rem;
     margin-bottom: 2rem;
     height: 5rem;
     width: 45%;
-    padding-left: 10px;
+    padding-left: 0.625rem;
     color:rgb(11, 49, 43);
     border: 1px solid rgb(70, 69, 69);
     border-radius: 2px;
@@ -115,6 +117,40 @@ header{
     outline: none;
 }
 
+.form-body input:hover {
+  transition: 0.5s;
+  border: 1px solid rgb(133, 87, 126);
+  color: rgb(43, 64, 68);
+}
+
+.form-body button {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 55.5rem;
+  vertical-align: middle;
+  height: 2.2rem;
+  width: 13%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background: rgb(96, 183, 209);
+  color:rgba(255, 255, 255, 0.938);
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1.5px solid rgb(1, 55, 65);
+  transition: all 0.5s ease;
+}
+
+.form-body button:hover {
+  color:rgb(255, 255, 255);
+  border:rgb(16, 50, 54);
+  background: linear-gradient(#6d586d, #38595f);
+}
+
 .form-body h1{
     text-align: left;
     font-size: 1rem;
@@ -122,19 +158,72 @@ header{
     margin-bottom: 1rem;
 }
 
+.form-body h2{
+  width: 30rem;
+  text-align: left;
+  font-size: 1rem;
+  color: solid rgb(97, 97, 97);
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.form-body h3{
+  width: 30rem;
+  text-align: left;
+  font-size: 1rem;
+  color: solid rgb(97, 97, 97);
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.form-body h4{
+  width: 30rem;
+  text-align: left;
+  font-size: 1rem;
+  color: solid rgb(97, 97, 97);
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.form-body h5{
+  width: 30rem;
+  text-align: left;
+  font-size: 1rem;
+  color: solid rgb(97, 97, 97);
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.form-body h6{
+  width: 30rem;
+  text-align: left;
+  font-size: 1rem;
+  color: solid rgb(97, 97, 97);
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.form-body h7{
+  width: 30rem;
+  text-align: left;
+  font-size: 1rem;
+  color: solid rgb(97, 97, 97);
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
 .creatividad-container {
     display: flex;
     color: rgb(97, 96, 96);
 }
 
 .rating {
-    margin-left: 35rem;
+    margin-left: 7rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
 
 .rating label {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: gray;
   }
   
@@ -162,13 +251,13 @@ header{
 }
 
 .rating1 {
-    margin-left: 1rem;
+    margin-left: 7rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
 
 .rating1 label {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: gray;
   }
   
@@ -196,13 +285,13 @@ header{
 }
 
 .rating2 {
-    margin-left: 1rem;
+    margin-left: 7rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
 
 .rating2 label {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: gray;
   }
   
@@ -230,13 +319,13 @@ header{
 }
 
 .rating3 {
-    margin-left: 1rem;
+    margin-left: 7rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
 
 .rating3 label {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: gray;
   }
   
@@ -264,13 +353,13 @@ header{
 }
 
 .rating4 {
-    margin-left: 1rem;
+    margin-left: 7rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
 
 .rating4 label {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: gray;
   }
   
@@ -298,13 +387,13 @@ header{
 }
 
 .rating5 {
-    margin-left: 1rem;
+    margin-left: 7rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
 
 .rating5 label {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: gray;
   }
   
@@ -327,11 +416,9 @@ header{
   }
 
   .form-body input[id=comentario] {
-    margin-top: 0rem;
-    margin-left: 0rem;
     height: 1.8rem;
     width: 30%;
-    padding-left: 10px;
+    padding-left: 0.625rem;
     color:rgb(97, 97, 97);
     border: 1px solid rgb(70, 69, 69);
     border-radius: 2px;
@@ -341,37 +428,66 @@ header{
     text-align: left;
 }
 
-.form-body input:hover {
-    transition: 0.5s;
-    border: 1px solid rgb(133, 87, 126);
-    color: rgb(43, 64, 68);
+@media (max-width: 1800px) {
+
+header {
+  flex-direction:column;
+}
+
+.logo img {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.text {
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+
+.marco {
+  width: 97%;
+  margin: 1rem;
+  height: 90%;
+}
+
+.form-body {
+  flex-direction: column;
+  width: 95%;
+  margin-top: 2px;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.form-body input {
+  width: 82%;
 }
 
 .form-body button {
-    display: block;
-    margin: auto;
-    margin-top: 12px;
-    margin-left: 30rem;
-    margin-bottom: 25px;
-    height: 40px;
-    width: 23%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    background: rgb(77, 164, 167);
-    color:rgba(255, 255, 255, 0.938);
-    border-radius: 2px;
-    cursor: pointer;
-    outline: none;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 1.5px solid rgb(1, 55, 65);
-    transition: all 0.5s ease;
+  margin-left: 5rem;
+  margin-right: 0;
+  width:55%;
+
+}
 }
 
-.form-body button:hover {
-    color:rgb(255, 255, 255);
-    border:rgb(16, 50, 54);
-    background: linear-gradient(#6d586d, #38595f);
-}
+@media (max-width: 768px) {
+  .marco {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+  
+  .form-body {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+  
+  .form-body button {
+  margin-left: 44.5%;
+  }
+  
+  .text {
+  margin-left: 30%;
+  }
+  }

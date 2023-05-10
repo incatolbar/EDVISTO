@@ -177,7 +177,16 @@ header{
     border: 1px solid red;
   }
 
-  @media (max-width: 700px) {
+@media (max-width: 850px) {
+.form-body {
+    margin-top: 3%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+}
+
+
+  @media (max-width: 600px) {
     .form-body {
         width: 90%;
         margin-top: 2px;

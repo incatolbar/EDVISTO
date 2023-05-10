@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cargue de videos - Edvisto</title>
     <link rel="stylesheet" href="./style/carguevideo.css">
+
 </head>
 <body>
     <script src="./js/carguevideo.js"></script>
@@ -14,6 +15,7 @@
             <img src="./img/logo edvisto azul.jpg" alt="Logo">
         </a>
     </header>
+    <div class="marco">
     <div class="form-body">
         <form onsubmit="return validateForm()">
             <input type="url" placeholder="URL" name="url" id="url" maxlength="2048" required pattern="^(https?://)?(?!.*[$%&])[\w\-\.]+\.[a-zA-Z]{2,}(\/\S*)?$">
@@ -23,8 +25,7 @@
             <input type="email" placeholder="E-mail del docente" name="email" id="emailD">
             <textarea name="descripción" placeholder="Descripción" rows="8" cols="80" maxlength="1060"></textarea>
             <button type="submit">Guardar</button>
-        </form>
+        </form>        
     </div>
-        
-</body>
+    </body>
 </html>

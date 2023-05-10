@@ -1,4 +1,3 @@
-
 function StarRating() {
   const [selected, setSelected] = useState(0);
   const [hovered, setHovered] = useState(0);

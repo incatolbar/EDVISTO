@@ -18,7 +18,8 @@
 
     <div class="marco">
     <div class="form-body">
-        <form name= evaluacion onsubmit="return validateForm()">
+        <form name= "evaluacion" onsubmit="return validateForm();">
+            <div class="selecciona">
             LISTADO DE VIDEOS
             <select name="Titulo" id="titulo">
                 <option value></option>
@@ -26,11 +27,13 @@
             <select name="Datos del estudiante" id="DatosEstudiante">
             </select>
             <input type="text" id="descripcion" name="descripcion" placeholder="Descripción" readonly>
+            
+        </div>
 
             <h1>EVALUACIÓN</h1>
 
     <div class="creatividad-container">    
-            Creatividad
+            <h2>Creatividad</h2>
             <div class="rating">
             <input id="radio1" type="radio" class="estrellas" name="estrellas" value="5">
             <label for="radio1">★</label>
@@ -47,8 +50,8 @@
     </div>
 
     <div class="recursos-container">
-            1. Elige los recursos que necesita para llevar al cabo las 
-            actividades que decide realizar.
+            <h3>1. Elige los recursos que necesita para llevar al cabo las 
+            actividades que decide realizar.</h3>
             <div class="rating1">
                 <input id="radio11" type="radio" class="estrellas" name="estrellas1" value="5">
                 <label for="radio11">★</label>
@@ -65,8 +68,8 @@
     </div>
 
     <div class="decisiones-container">
-            2. Persiste en la realización de actividades desafiantes y 
-            toma decisiones para concluirlas.
+            <h4>2. Persiste en la realización de actividades desafiantes y 
+            toma decisiones para concluirlas.</h4>
             <div class="rating2">
                 <input id="radio12" type="radio" class="estrellas" name="estrellas2" value="5">
                 <label for="radio12">★</label>
@@ -83,7 +86,7 @@
     </div>
 
     <div class="ayuda-container">
-            3. Reconoce cuando alguien necesita ayuda y la proporciona.
+            <h5>3. Reconoce cuando alguien necesita ayuda y la proporciona.</h5>
             <div class="rating3">
                 <input id="radio13" type="radio" class="estrellas" name="estrellas3" value="5">
                 <label for="radio13">★</label>
@@ -100,7 +103,7 @@
     </div>
 
     <div class="seguridad-container">
-            4. Se expresa con seguridad y defiende sus ideas ante sus compañeros.
+            <h6>4. Se expresa con seguridad y defiende sus ideas ante sus compañeros.</h6>
             <div class="rating4">
                 <input id="radio14" type="radio" class="estrellas" name="estrellas4" value="5">
                 <label for="radio14">★</label>
@@ -117,7 +120,7 @@
     </div>
 
     <div class="convivencia-container">
-            5.Propone acuerdos para la convivencia, el juego o el trabajo, explica su utilidad y actúa con apego a ellos.
+            <h7>5. Propone acuerdos para la convivencia, el juego o el trabajo, explica su utilidad y actúa con apego a ellos.</h7>
             <div class="rating5">
                 <input id="radio15" type="radio" class="estrellas" name="estrellas5" value="5">
                 <label for="radio15">★</label>
@@ -132,7 +135,6 @@
             </div>
             <input type="text" placeholder="Haz un comentario" name="comentario5" id="comentario">
     </div>
-
             <button type="submit">Guardar</button>
         </form>
     </div>
