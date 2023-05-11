@@ -1,6 +1,24 @@
-var Guardar = document.querySelector('button[type=submit]');
-Guardar.addEventListener('click', function() {
-    alert('El video ha sido guardado.');
+import Swal from 'sweetalert2';
+var guardarBtn = document.getElementById('guardarBtn');
+guardarBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  Swal({
+    title: '¿Estás seguro?',
+    text: "El video se guardará en la base de datos.",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Sí, guardar'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal(
+        '¡Guardado!',
+        'El video ha sido guardado.',
+        'success'
+      )
+    }
+  })
 });
 
 function validateForm() {
@@ -23,4 +41,5 @@ var emailRegex = /^\S+@\S+\.\S+$/;
 
 alert("Video cargado con exito!");
   return true;
+
 }
