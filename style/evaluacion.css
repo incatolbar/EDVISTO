@@ -42,23 +42,23 @@ header{
 }
 
 .marco{
-    display:flow-root;
+    display:flex;
     width: 97%;
-    height: 90%;
+    height: 97%;
     min-width: 2.5rem;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.116);
-    margin-left: 1.5rem;
-    margin-top: 1.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding:1.5rem;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding:2%;
 }
 
 .form-body {
-    display:flow-root;
+    display:flex;
     width: 68%;
-    height: 82%;
+    height: 98%;
     min-width: 2.5rem;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.959);
@@ -428,11 +428,14 @@ header{
     text-align: left;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1000px) {
 
 header {
   flex-direction:column;
 }
+}
+
+@media (max-width: 1800px) {
 
 .logo img {
   margin: 0 auto;
@@ -447,13 +450,17 @@ header {
 .marco {
   width: 97%;
   margin: 1rem;
-  height: 90%;
+  height: 110%;
+  margin-bottom: 2%;
 }
 
 .form-body {
   flex-direction: column;
-  width: 95%;
-  margin-top: 2px;
+  width: 93%;
+  height: 90%;
+  margin-top: 0 ;
+  padding-top: 1%;
+  padding: 3%;
   margin-left: 20px;
   margin-right: 0;
 }
@@ -463,9 +470,9 @@ header {
 }
 
 .form-body button {
-  margin-left: 5rem;
+  margin-left: 82%;
   margin-right: 0;
-  width:55%;
+  width:13%;
 
 }
 }
