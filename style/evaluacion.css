@@ -43,15 +43,15 @@ header{
 
 .marco{
     display:flex;
-    width: 97%;
-    height: 97%;
+    width: 95%;
+    height: 90%;
     min-width: 2.5rem;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.116);
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
     padding:2%;
 }
 
@@ -63,7 +63,7 @@ header{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.959);
     margin-left: 16%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-right: 5%;
     margin-bottom: 1.25rem;
     padding:4%;
@@ -75,7 +75,7 @@ header{
 .form-body select[name="Titulo"]{
     height: 1.875rem;
     width: 45%;
-    margin-left: 1.5rem;
+    margin-left: 2.5%;
     padding-left:1.875rem;
     color:rgb(11, 49, 43);
     border: 1px solid rgb(70, 69, 69);
@@ -89,7 +89,7 @@ header{
 .form-body select[name="Datos del estudiante"]{
     height: 1.875rem;
     width: 31%;
-    margin-left: 1.5rem;
+    margin-left: 2.5%;
     padding-left:1.875rem;
     color:rgb(11, 49, 43);
     border: 1px solid rgb(70, 69, 69);
@@ -101,9 +101,8 @@ header{
 }
 
 .form-body input[id=descripcion] {
-    display: inline-block;
     margin-top: 1rem;
-    margin-left: 11.7rem;
+    margin-left: 20%;
     margin-bottom: 2rem;
     height: 5rem;
     width: 45%;
@@ -124,12 +123,10 @@ header{
 }
 
 .form-body button {
-  display: inline-block;
   margin-top: 1rem;
-  margin-left: 55.5rem;
-  vertical-align: middle;
+  margin-left: 55rem;
   height: 2.2rem;
-  width: 13%;
+  width: 6rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   background: rgb(96, 183, 209);
@@ -158,51 +155,11 @@ header{
     margin-bottom: 1rem;
 }
 
-.form-body h2{
-  width: 30rem;
-  text-align: left;
-  font-size: 1rem;
-  color: solid rgb(97, 97, 97);
-  margin-bottom: 1rem;
-  font-weight: normal;
-}
-
-.form-body h3{
-  width: 30rem;
-  text-align: left;
-  font-size: 1rem;
-  color: solid rgb(97, 97, 97);
-  margin-bottom: 1rem;
-  font-weight: normal;
-}
-
-.form-body h4{
-  width: 30rem;
-  text-align: left;
-  font-size: 1rem;
-  color: solid rgb(97, 97, 97);
-  margin-bottom: 1rem;
-  font-weight: normal;
-}
-
-.form-body h5{
-  width: 30rem;
-  text-align: left;
-  font-size: 1rem;
-  color: solid rgb(97, 97, 97);
-  margin-bottom: 1rem;
-  font-weight: normal;
-}
-
-.form-body h6{
-  width: 30rem;
-  text-align: left;
-  font-size: 1rem;
-  color: solid rgb(97, 97, 97);
-  margin-bottom: 1rem;
-  font-weight: normal;
-}
-
+.form-body h2,
+.form-body h3,
+.form-body h4,
+.form-body h5,
+.form-body h6,
 .form-body h7{
   width: 30rem;
   text-align: left;
@@ -211,63 +168,62 @@ header{
   margin-bottom: 1rem;
   font-weight: normal;
 }
-.creatividad-container {
+
+.creatividad-container,
+.recursos-container,
+.decisiones-container,
+.ayuda-container,
+.seguridad-container,
+.convivencia-container {
     display: flex;
     color: rgb(97, 96, 96);
 }
 
-.rating {
-    margin-left: 7rem;
+.rating,
+.rating1,
+.rating2,
+.rating3,
+.rating4,
+.rating5 {
+    margin-left: 6%;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    direction: rtl;
+    unicode-bidi: bidi-override;
   }
 
-.rating label {
+.rating label,
+.rating1 label,
+.rating2 label,
+.rating3 label,
+.rating4 label,
+.rating5 label {
     font-size: 1.25rem;
     color: gray;
   }
   
-.rating input[type="radio"] {
+.rating input[type="radio"],
+.rating1 input[type="radio"],
+.rating2 input[type="radio"],
+.rating3 input[type="radio"],
+.rating4 input[type="radio"],
+.rating5 input[type="radio"] {
     display: none;
   }
-   
-.rating {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-  }
+  
   
 .rating  label:hover,
 .rating  label:hover ~ label {
     color: orange;
   }
   
-.rating input[type="radio"]:checked ~ label {
+.rating input[type="radio"]:checked ~ label,
+.rating1 input[type="radio"]:checked ~ label,
+.rating2 input[type="radio"]:checked ~ label,
+.rating3 input[type="radio"]:checked ~ label,
+.rating4 input[type="radio"]:checked ~ label,
+.rating5 input[type="radio"]:checked ~ label {
     color: orange;
-  }
-
-.recursos-container {
-    display: flex;
-    color: rgb(97, 96, 96);
-}
-
-.rating1 {
-    margin-left: 7rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-
-.rating1 label {
-    font-size: 1.25rem;
-    color: gray;
-  }
-  
-.rating1 input[type="radio"] {
-    display: none;
-  }
-   
-.rating1 {
-    direction: rtl;
-    unicode-bidi: bidi-override;
   }
   
 .rating1  label:hover,
@@ -275,67 +231,9 @@ header{
     color: orange;
   }
   
-.rating1 input[type="radio"]:checked ~ label {
-    color: orange;
-  }
-
-.decisiones-container {
-    display: flex;
-    color: rgb(97, 96, 96);
-}
-
-.rating2 {
-    margin-left: 7rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-
-.rating2 label {
-    font-size: 1.25rem;
-    color: gray;
-  }
-  
-.rating2 input[type="radio"] {
-    display: none;
-  }
-   
-.rating2 {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-  }
-  
 .rating2  label:hover,
 .rating2  label:hover ~ label {
     color: orange;
-  }
-  
-.rating2 input[type="radio"]:checked ~ label {
-    color: orange;
-  }
-
-.ayuda-container {
-    display: flex;
-    color: rgb(97, 96, 96);
-}
-
-.rating3 {
-    margin-left: 7rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-
-.rating3 label {
-    font-size: 1.25rem;
-    color: gray;
-  }
-  
-.rating3 input[type="radio"] {
-    display: none;
-  }
-   
-.rating3 {
-    direction: rtl;
-    unicode-bidi: bidi-override;
   }
   
 .rating3  label:hover,
@@ -343,75 +241,13 @@ header{
     color: orange;
   }
   
-.rating3 input[type="radio"]:checked ~ label {
-    color: orange;
-  }
-
-.seguridad-container {
-    display: flex;
-    color: rgb(97, 96, 96);
-}
-
-.rating4 {
-    margin-left: 7rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-
-.rating4 label {
-    font-size: 1.25rem;
-    color: gray;
-  }
-  
-.rating4 input[type="radio"] {
-    display: none;
-  }
-   
-.rating4 {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-  }
-  
 .rating4  label:hover,
 .rating4  label:hover ~ label {
     color: orange;
   }
   
-.rating4 input[type="radio"]:checked ~ label {
-    color: orange;
-  }
-
-.convivencia-container {
-    display: flex;
-    color: rgb(97, 96, 96);
-}
-
-.rating5 {
-    margin-left: 7rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-
-.rating5 label {
-    font-size: 1.25rem;
-    color: gray;
-  }
-  
-.rating5 input[type="radio"] {
-    display: none;
-  }
-   
-.rating5 {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-  }
-  
 .rating5  label:hover,
 .rating5  label:hover ~ label {
-    color: orange;
-  }
-  
-.rating5 input[type="radio"]:checked ~ label {
     color: orange;
   }
 
@@ -426,6 +262,43 @@ header{
     background-color: white;
     font-size: 0.8rem;
     text-align: left;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .form-body select[name="Titulo"],
+  .form-body select[name="Datos del estudiante"],
+  .form-body input[id=descripcion] {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1rem;  
+  }
+
+  .selecciona {
+    text-align: center;
+  }
+  
+  .selecciona > span {
+    margin: 0 auto;
+  }
+
+  .form-body {
+    margin: 0 auto;
+    overflow-y: auto;
+    font-size: 2.5vh;
+    padding: 1em;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-body select[name="Titulo"],
+  .form-body select[name="Datos del estudiante"],
+  .form-body input[id=descripcion] {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 1rem;  
+  }
 }
 
 @media (max-width: 1000px) {
@@ -471,7 +344,7 @@ header {
 
 .form-body button {
   margin-left: 82%;
-  margin-right: 0;
+  margin-right: 30%;
   width:13%;
 
 }
@@ -497,4 +370,21 @@ header {
   .text {
   margin-left: 30%;
   }
+
+  .form-body h2 {
+    width: 30%;
+    margin-left: 10%;
+  }
+
+  .rating {
+    width: 60%;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .form-body input[id=comentario] {
+    width: 100%;
+  }
+
+
   }
