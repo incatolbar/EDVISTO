@@ -165,7 +165,6 @@ nav a:hover{
     float: left;
 }
 
-
 .form-body input:hover {
     transition: 0.5s;
     border: 1px solid rgb(133, 87, 126);

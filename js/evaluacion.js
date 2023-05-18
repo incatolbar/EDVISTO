@@ -4,6 +4,7 @@ function StarRating() {
 
   const handleClick = (i) => {
     setSelected(i);
+    sendRating(i + 1); // Enviar calificación a la API
   };
 
   const handleMouseOver = (i) => {
@@ -12,6 +13,23 @@ function StarRating() {
 
   const handleMouseLeave = () => {
     setHovered(0);
+  };
+
+  const sendRating = (rating) => {
+    fetch('URL', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ "rating": 5, "descripción": "texto"})
+    })
+      .then(response => {
+        
+      })
+      .catch(error => {
+
+      });
   };
 
   return (
