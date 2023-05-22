@@ -102,7 +102,7 @@ header{
 
 .form-body input[id=descripcion] {
     margin-top: 1rem;
-    margin-left: 20%;
+    margin-left: 19.5%;
     margin-bottom: 2rem;
     height: 5rem;
     width: 45%;
@@ -385,6 +385,4 @@ header {
   .form-body input[id=comentario] {
     width: 100%;
   }
-
-
   }

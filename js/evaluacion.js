@@ -1,10 +1,42 @@
+import React, { useState } from 'react';
+function handleVideoSelect(event) {
+  const selectedTitle = event.target.value;
+  const selectedVideo = videoData.find(video => video.title === selectedTitle);
+
+  if (selectedVideo) {
+    const studentName = selectedVideo.studentData;
+    const description = selectedVideo.description;
+
+    setStudentData(studentName);
+    setDescription(description);
+  }
+}
+
+
+VERIFICARESTO 
+
+
+const handleTitleChange = (event) => {
+  const selectedTitle = event.target.value;
+
+  fetch(`URL-Estudiante?videoTitle=${selectedTitle}`)
+    .then(response => response.json())
+    .then(studentData => setStudentData(studentData))
+    .catch(error => console.log(error));
+
+  fetch(`URL-Descripcion?videoTitle=${selectedTitle}`)
+    .then(response => response.text())
+    .then(description => setDescription(description))
+    .catch(error => console.log(error));
+};
+
 function StarRating() {
   const [selected, setSelected] = useState(0);
   const [hovered, setHovered] = useState(0);
 
   const handleClick = (i) => {
     setSelected(i);
-    sendRating(i + 1); // Enviar calificación a la API
+    sendRating(i);
   };
 
   const handleMouseOver = (i) => {
@@ -15,6 +47,7 @@ function StarRating() {
     setHovered(0);
   };
 
+  
   const sendRating = (rating) => {
     fetch('URL', {
       method: 'POST',
@@ -22,7 +55,7 @@ function StarRating() {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ "rating": 5, "descripción": "texto"})
+      body: JSON.stringify({ "rating": rating })
     })
       .then(response => {
         
@@ -31,6 +64,7 @@ function StarRating() {
 
       });
   };
+
 
   return (
     <div>

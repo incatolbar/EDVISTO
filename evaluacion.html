@@ -21,12 +21,19 @@
         <form name= "evaluacion" onsubmit="return validateForm();">
             <div class="selecciona">
             LISTADO DE VIDEOS
-            <select name="Titulo" id="titulo">
-                <option value></option>
-            </select>
-            <select name="Datos del estudiante" id="DatosEstudiante">
-            </select>
-            <input type="text" id="descripcion" name="descripcion" placeholder="Descripción" readonly>
+            <select name="Titulo" id="titulo" onchange="handleVideoSelect(event)">
+                <option value=""></option>
+                {videoData.map((video, index) => (
+                  <option key={index} value={title}>{title}</option>
+                ))}
+              </select>
+              <select name="Datos del estudiante" id="DatosEstudiante">
+                {studentData.map((student, index) => (
+                  <option key={index} value={student.name}>student.name</option>
+                ))}
+              </select>
+              
+              <input type="text" id="descripcion" name="descripcion" placeholder="Descripción" value={description} readOnly />
             
         </div>
 
