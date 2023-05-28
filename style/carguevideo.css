@@ -1,25 +1,26 @@
 * {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family:'Courier New', Courier, monospace;
+body {
+    font-family: 'Courier New', Courier, monospace;
     background-image: url(../img/Background\ solo.jpg);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:fixed; 
+    background-attachment: fixed;
 
 }
 
-a{
+a {
     text-decoration: none;
-    color:rgb(78, 78, 78);
+    color: rgb(78, 78, 78);
 }
-header{
-    display:flex;
+
+header {
+    display: flex;
     min-height: 2.5rem;
     background-color: rgba(255, 255, 255, 0.986);
     justify-content: space-between;
@@ -27,37 +28,38 @@ header{
     padding: 0.625rem;
 }
 
-.logo{
-    display:flex;
+.logo {
+    display: flex;
     align-items: center;
 }
 
-.logo img{
-    height:30px;
+.logo img {
+    height: 30px;
 }
 
-@media (max-width:700px){
-    header{flex-direction:column;
-    } 
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
 }
 
-.marco{
-    display:flow-root;
-    width: 97%;
-    height: 98%;
-    min-width: 90%;
+.marco {
+    display: flow-root;
+    position: absolute;
+    top: 7.5%;
+    left: 1%;
+    right: 1%;
+    bottom: 2%;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.116);
-    margin-left: 1.5rem;
-    margin-top: 1.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 10%;
-    padding:1.5rem;
+    padding: 1.5rem;
 }
 
 .form-body {
     position: relative;
-    display:flow-root;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     width: 40rem;
     min-width: 2.5rem;
     border-radius: 10px;
@@ -73,7 +75,7 @@ header{
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     margin-bottom: 25px;
 }
 
@@ -83,10 +85,10 @@ header{
     height: 2.5rem;
     width: 75%;
     padding-left: 0.625rem;
-    color:rgb(11, 49, 43);
+    color: rgb(11, 49, 43);
     border: 1px solid rgb(70, 69, 69);
     border-radius: 2px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -97,22 +99,22 @@ header{
 }
 
 
-.form-body input[type="url"]{
+.form-body input[type="url"] {
     margin-top: 0;
 }
 
-.form-body input[type="text"]{
+.form-body input[type="text"] {
     margin-top: 0.9375rem;
 }
 
 
-.form-body input[type="email"]{
+.form-body input[type="email"] {
     margin-top: 0.9375rem;
 }
 
-.form-body textarea[name="descripción"]{
+.form-body textarea[name="descripción"] {
     display: block;
-    margin:auto;
+    margin: auto;
     margin-top: 0.9375rem;
     margin-left: 4.875rem;
     margin-bottom: 0.9375rem;
@@ -122,10 +124,10 @@ header{
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     padding-bottom: 0.625rem;
-    color:rgb(11, 49, 43);
+    color: rgb(11, 49, 43);
     border: 1px solid rgb(70, 69, 69);
     border-radius: 2px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -134,10 +136,10 @@ header{
     overflow: hidden;
     font-size: 1rem;
     outline: none;
-    resize:none;
+    resize: none;
 }
 
-.form-body textarea[placeholder="Descripción"]{
+.form-body textarea[placeholder="Descripción"] {
     font-size: 1rem;
     color: rgba(97, 99, 98, 0.952);
     height: 10.625rem;
@@ -161,8 +163,8 @@ header{
 
 .form-body button {
     position: absolute;
-    top: 100%;
-    left: 50%;
+    top: 98%;
+    left: 77%;
     transform: translateX(-50%);
     margin-top: 0.75rem;
     margin-bottom: 1.5625rem;
@@ -171,7 +173,7 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     background: rgb(77, 164, 167);
-    color:rgba(255, 255, 255, 0.938);
+    color: rgba(255, 255, 255, 0.938);
     border-radius: 2px;
     cursor: pointer;
     outline: none;
@@ -184,8 +186,8 @@ header{
 }
 
 .form-body button:hover {
-    color:rgb(255, 255, 255);
-    border:rgb(16, 50, 54);
+    color: rgb(255, 255, 255);
+    border: rgb(16, 50, 54);
     background: linear-gradient(#6d586d, #38595f);
 }
 
@@ -202,6 +204,7 @@ header{
         margin-top: 0.125rem;
         margin-left: 1.25rem;
         margin-right: 0;
+        align-items: center;
     }
 
     .form-body input {
@@ -210,14 +213,14 @@ header{
 
     .form-body button {
         width: 7rem;
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
+        margin-top: 0.75rem;
+        margin-left: 80%;
+        margin-bottom: 1.5625rem;
+        position: static;
     }
 
-    .form-body textarea[name="descripción"]{
+    .form-body textarea[name="descripción"] {
         width: 100%;
         margin-left: 0;
-      }
+    }
 }
