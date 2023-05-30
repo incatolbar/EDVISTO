@@ -1,10 +1,14 @@
-var url = "https://team-3-back.onrender.com";
-
 window.onload = function () {
   const form = document.forms.formulario;
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     validateForm();
+
+    const data = new FormData(event.target);
+
+    const dataObject = Object.fromEntries(data)
+    console.log(dataObject)
+
   });
 }
 
@@ -42,12 +46,13 @@ function redirigir() {
   const email = document.forms["formulario"]["email"].value;
   const rol = document.forms["formulario"]["rol"].value;
 
-  const data = {
+  var data = {
     email: email,
     rol: rol
   };
+  
 
-  fetch('/users', {
+  fetch('https://team-3-back.onrender.com/users', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
@@ -57,16 +62,19 @@ function redirigir() {
   })
     .then(response => response.json())
     .then(result => {
+      console.log("Entra al post");
       console.log(result);
+      
+    const selectedValue = document.getElementById('rol').value;
+      
+      if (selectedValue === 'docente') {
+        window.location.href = './evaluacion.html';
+      } else if (selectedValue === 'estudiante') {
+        window.location.href = "./carguevideo.html";
+      }
+      
     })
     .catch(error => console.log(error));
 
-  const selectedValue = document.getElementById('rol').value;
-
-  if (selectedValue === '1') {
-    window.location.href = './evaluacion.html';
-  } else if (selectedValue === '2') {
-    window.location.href = "./carguevideo.html";
-  }
 
 }
