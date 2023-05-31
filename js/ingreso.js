@@ -52,7 +52,7 @@ function redirigir() {
   };
   
 
-  fetch('https://team-3-back.onrender.com/users', {
+  fetch('http://localhost:3000/login', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
@@ -67,9 +67,9 @@ function redirigir() {
       
     const selectedValue = document.getElementById('rol').value;
       
-      if (selectedValue === 'docente') {
+      if (selectedValue === 'teacher') {
         window.location.href = './evaluacion.html';
-      } else if (selectedValue === 'estudiante') {
+      } else if (selectedValue === 'student') {
         window.location.href = "./carguevideo.html";
       }
       
