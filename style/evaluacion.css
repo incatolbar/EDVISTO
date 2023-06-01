@@ -262,7 +262,7 @@ header {
   text-align: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   
   header {
     flex-direction: column;
@@ -290,8 +290,8 @@ header {
   }
 
   .marco {
-    width: auto;
-    height: auto;
+    position:static;
+    margin: 1rem;
   }
 
   .form-body {
@@ -360,10 +360,18 @@ header {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  
+  .form-body {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-} /*seria definir un ancho de form body y todo en columna igual*/
+}
 
 @media (min-width: 1024px) and (max-width: 1279px){
+
+  
 
 } /*aca se puede ya ir en pantalla normal solo que se vaya ajustando el margen*/
 
