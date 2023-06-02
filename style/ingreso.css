@@ -129,7 +129,8 @@ header {
 
 ::placeholder {
     font-size: 1rem;
-    color: rgba(97, 99, 98, 0.952);
+    color: #999;
+    opacity: 1;
     margin-top: 0.625rem;
     margin-left: 0.625rem;
     height: 10.625rem;

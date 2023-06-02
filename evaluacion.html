@@ -21,23 +21,19 @@
         <form name= "evaluacion" onsubmit="return validateForm();">
             <div class="selecciona">
             LISTADO DE VIDEOS
-            <select name="Titulo" id="titulo" onchange="handleVideoSelect(event)">
-                <option value=""></option>
-                {videoData.map((video, index) => (
-                  <option key={index} value={title}>{title}</option>
-                ))}
-              </select>
-              <select name="Datos del estudiante" id="DatosEstudiante">
-                {studentData.map((student, index) => (
-                  <option key={index} value={student.name}>student.name</option>
-                ))}
-              </select>
+            <select name="Titulo" id="title" onchange="handleVideoSelect(event)">
+                <option value=""></option>    
+            </select>
+            <select name="Datos del estudiante" id="studentName">
+                <option value></option>
+            </select>
               
-              <input type="text" id="descripcion" name="descripcion" placeholder="Descripción" value={description} readOnly />
+            <input type="text" id="description" name="descripcion" placeholder="Descripción" readOnly />
             
         </div>
 
             <h1>EVALUACIÓN</h1>
+
 
     <div class="creatividad-container">    
             <h2>Creatividad</h2>
@@ -142,7 +138,7 @@
             </div>
             <input type="text" placeholder="Haz un comentario" name="comentario5" id="comentario">
     </div>
-            <button type="submit">Guardar</button>
+            <button type="submit" id="guardarBtn">Guardar</button>
         </form>
     </div>
 </div>

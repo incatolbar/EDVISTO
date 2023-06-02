@@ -1,14 +1,13 @@
 window.onload = function () {
   const form = document.forms.formulario;
+  const submitBtn = document.getElementById("submitBtn");
+  
   form.addEventListener("submit", function (event) {
     event.preventDefault();
+    
+    submitBtn.disabled = true;
+    
     validateForm();
-
-    const data = new FormData(event.target);
-
-    const dataObject = Object.fromEntries(data)
-    console.log(dataObject)
-
   });
 }
 
@@ -17,9 +16,13 @@ function validateForm() {
   var emailError = document.getElementById("emailError");
   var emailInput = document.getElementById("email");
   var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  
   if (nomForm == null || nomForm == "" || nomForm.length == 0 || /^\s+$/.test(nomForm) || !emailPattern.test(nomForm)) {
     emailError.textContent = "El formato de correo no es válido.";
     emailInput.classList.add("error-input");
+    
+    document.getElementById("submitBtn").disabled = false;
+    
     return false;
   } else {
     emailError.textContent = "";
@@ -29,17 +32,24 @@ function validateForm() {
   var rolForm = document.forms["formulario"]["rol"].selectedIndex;
   var rolError = document.getElementById("rolError");
   var rolInput = document.getElementById("rol");
+  
   if (rolForm == null || rolForm == 0) {
     rolError.textContent = "Debes seleccionar un rol.";
     rolInput.classList.add("error-input");
+    
+    document.getElementById("submitBtn").disabled = false;
+    
     return false;
   } else {
     rolError.textContent = "";
     rolInput.classList.remove("error-input");
   }
 
-  redirigir();
-  return true;
+  if (redirigir()) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function redirigir() {
@@ -50,7 +60,6 @@ function redirigir() {
     email: email,
     rol: rol
   };
-  
 
   fetch('http://localhost:3000/login', {
     method: 'POST',
@@ -60,12 +69,19 @@ function redirigir() {
     },
     body: JSON.stringify(data)
   })
-    .then(response => response.json())
+    .then(response => {
+      if (response.status === 200) {
+        return response.json();
+      } else {
+        // Mostrar mensaje de error al usuario
+        throw new Error("Error en la solicitud");
+      }
+    })
     .then(result => {
       console.log("Entra al post");
       console.log(result);
       
-    const selectedValue = document.getElementById('rol').value;
+      const selectedValue = document.getElementById('rol').value;
       
       if (selectedValue === 'teacher') {
         window.location.href = './evaluacion.html';
@@ -74,5 +90,13 @@ function redirigir() {
       }
       
     })
-    .catch(error => console.log(error));
+    .catch(error => {
+      Swal.fire({
+        icon: 'error',
+        title: '',
+        text: 'Verifica que el email coincida con el rol'
+      })
+      console.log(error);
+      document.getElementById("submitBtn").disabled = false;
+    });
 }

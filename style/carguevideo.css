@@ -103,19 +103,26 @@ header {
     margin-top: 0;
 }
 
-.form-body input[type="text"] {
-    margin-top: 0.9375rem;
+.form-body input[id="title"] {
+    margin-top: 0.2rem;
 }
 
+.form-body input[id="studentName"] {
+    margin-top: 1.2rem;
+}
 
-.form-body input[type="email"] {
-    margin-top: 0.9375rem;
+.form-body input[id="emailStudent"] {
+    margin-top: 1.2rem;
+}
+
+.form-body input[id="emailTeacher"] {
+    margin-top: 0.2rem;
 }
 
 .form-body textarea[name="description"] {
     display: block;
     margin: auto;
-    margin-top: 0.9375rem;
+    margin-top: 0.2rem;
     margin-left: 4.875rem;
     margin-bottom: 0.9375rem;
     height: 10.625rem;
@@ -172,7 +179,7 @@ header {
     width: 7rem;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    background: rgb(77, 164, 167);
+    background: rgb(74, 171, 209);
     color: rgba(255, 255, 255, 0.938);
     border-radius: 2px;
     cursor: pointer;
@@ -200,6 +207,22 @@ header {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif; /* Tamaño de fuente más pequeño */
   }
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+    margin-bottom: 0;
+    margin-left: 5.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#email.errorS-input {
+    border: 1px solid red;
+}
+
+#email.errorT-input {
+    border: 1px solid red;
+}
 
 @media (max-width: 700px) {
 
@@ -229,8 +252,12 @@ header {
         position: static;
     }
 
-    .form-body textarea[name="descripción"] {
+    .form-body textarea[name="description"] {
         width: 100%;
         margin-left: 0;
+    }
+
+    .error {
+        margin-left: 1rem;
     }
 }
