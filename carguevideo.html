@@ -18,13 +18,13 @@
     </header>
     <div class="marco">
     <div class="form-body">
-        <form onsubmit="return validateForm()">
+        <form name= formulario onsubmit= "return validateForm()" id="FormCargue">
             <input type="url" placeholder="URL" name="url" id="url" maxlength="2048" required pattern="^(https?://)?(?!.*[$%&])[\w\-\.]+\.[a-zA-Z]{2,}(\/\S*)?$">
-            <input type="text" placeholder="Título del video" name="titulo" id="titulo" maxlength="60">
-            <input type="text" placeholder="Nombre y apellido del estudiante" name="nombre" id="nombre">
-            <input type="email" placeholder="E-mail del estudiante" name="email" id="emailE">
-            <input type="email" placeholder="E-mail del docente" name="email" id="emailD">
-            <textarea name="descripción" placeholder="Descripción" rows="8" cols="80" maxlength="1060"></textarea>
+            <input type="text" placeholder="Título del video" name="title" id="title" maxlength="60">
+            <input type="text" placeholder="Nombre y apellido del estudiante" name="studentName" id="studentName">
+            <input type="email" placeholder="E-mail del estudiante" name="emailStudent" id="emailStudent">
+            <input type="email" placeholder="E-mail del docente" name="emailTeacher" id="emailTeacher">
+            <textarea name="description" placeholder="Descripción" id= "description" rows="8" cols="80" maxlength="1060"></textarea>
             <button type="submit" id="guardarBtn">Guardar</button>
         </form>        
     </div>

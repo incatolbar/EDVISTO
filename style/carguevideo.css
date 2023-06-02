@@ -112,7 +112,7 @@ header {
     margin-top: 0.9375rem;
 }
 
-.form-body textarea[name="descripción"] {
+.form-body textarea[name="description"] {
     display: block;
     margin: auto;
     margin-top: 0.9375rem;
@@ -139,7 +139,7 @@ header {
     resize: none;
 }
 
-.form-body textarea[placeholder="Descripción"] {
+.form-body textarea[placeholder="description"] {
     font-size: 1rem;
     color: rgba(97, 99, 98, 0.952);
     height: 10.625rem;
@@ -190,6 +190,16 @@ header {
     border: rgb(16, 50, 54);
     background: linear-gradient(#6d586d, #38595f);
 }
+
+.custom-title {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif; /* Tamaño de fuente más pequeño */
+  }
+
+.custom-text {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif; /* Tamaño de fuente más pequeño */
+  }
 
 @media (max-width: 700px) {
 

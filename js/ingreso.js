@@ -75,6 +75,4 @@ function redirigir() {
       
     })
     .catch(error => console.log(error));
-
-
 }
