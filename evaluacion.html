@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style/evaluacion.css">
 </head>
 <body>
-    <script src="./js/evaluacion.js"></script>
+
     <header>
         <a href="#" class="logo">
             <img src="./img/logo edvisto azul.jpg" alt="Logo">
@@ -21,7 +21,7 @@
         <form name= "evaluacion" onsubmit="return validateForm();">
             <div class="selecciona">
             LISTADO DE VIDEOS
-            <select name="Titulo" id="title" onchange="handleVideoSelect(event)">
+            <select name="Titulo" id="title">
                 <option value=""></option>    
             </select>
             <select name="Datos del estudiante" id="studentName">
@@ -142,5 +142,11 @@
         </form>
     </div>
 </div>
+
+
+
+
+
+<script src="./js/evaluacion.js"></script>
 </body>
 </html>
