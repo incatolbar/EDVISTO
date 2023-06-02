@@ -98,7 +98,7 @@ header {
   outline: none;
 }
 
-.form-body input[id=description] {
+.form-body textarea[id=description] {
   margin-top: 1rem;
   margin-left: 19.5%;
   margin-bottom: 2rem;
@@ -112,6 +112,7 @@ header {
   background-color: white;
   font-size: 1rem;
   outline: none;
+  white-space: pre-wrap;
 }
 
 .form-body input:hover {
@@ -283,7 +284,7 @@ header {
 
   .form-body select[name="Titulo"],
   .form-body select[name="Datos del estudiante"],
-  .form-body input[id=description] {
+  .form-body textarea[id=description] {
     width: 100%;
     margin-left: 0;
     margin-bottom: 1rem;

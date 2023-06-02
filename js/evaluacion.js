@@ -44,25 +44,60 @@ studentSelect.addEventListener('change', () => {
     });
 });
 
-// Evento de cambio en el select de videos
+// // Evento de cambio en el select de videos
+// const videoSelect = document.getElementById('title');
+// videoSelect.addEventListener('change', () => {
+//   const selectedVideo = videoSelect.value;
+
+//   // Obtener descripción del video seleccionado
+//   fetch(`http://localhost:3000/videos?title=${encodeURIComponent(selectedVideo)}`)
+//     .then(response => response.json())
+//     .then(data => {
+//       // Filtrar los videos por el título seleccionado
+//       const selectedVideoData = data.filter(video => video.title === selectedVideo);
+
+//       if (selectedVideoData.length > 0) {
+//         // Mostrar la descripción del video seleccionado
+//         const descriptionElement = document.getElementById('description');
+//         descriptionElement.textContent = selectedVideoData[0].description;
+//       }
+//     })
+//     .catch(error => {
+//       console.error('Error al obtener descripción del video:', error);
+//     });
+// });
+
+// Evento de cambio en el select de video
 const videoSelect = document.getElementById('title');
 videoSelect.addEventListener('change', () => {
   const selectedVideo = videoSelect.value;
-
+  
   // Obtener descripción del video seleccionado
-  fetch(`http://localhost:3000/video/:id?title=${encodeURIComponent(selectedVideo)}`)
+  fetch(`http://localhost:3000/videos?title=${encodeURIComponent(selectedVideo)}`)
     .then(response => response.json())
     .then(data => {
-      // Filtrar los videos por el título seleccionado
-      const selectedVideoData = data.filter(video => video.title === selectedVideo);
+      // data contiene la lista de videos del estudiante
+      const descriptionElement = document.getElementById('description');
+      
+      // Limpiar opciones anteriores
+      descriptionElement.innerHTML = '';
+      
+      // Agregar descripción del video seleccionado
+      descriptionElement.value = data[0].description;
 
-      if (selectedVideoData.length > 0) {
-        // Mostrar la descripción del video seleccionado
-        const descriptionElement = document.getElementById('description');
-        descriptionElement.textContent = selectedVideoData[0].description;
-      }
+
     })
     .catch(error => {
-      console.error('Error al obtener descripción del video:', error);
+      console.error('Error al obtener videos:', error);
     });
+});
+
+const guardarBtn = document.getElementById('guardarBtn');
+guardarBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  Swal.fire({
+    title: '',
+    html: '<span class="custom-title">Información registrada con éxito</span>',
+    icon: 'success'
+  });
 });
